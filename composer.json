@@ -1,0 +1,24 @@
+{
+    "name": "cjs/phptpl",
+    "description": "The jelly phptpl package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jelly",
+            "email": "42282367@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "classmap": [
+
+        ],
+        "files": [
+        ],
+        "psr-4": {
+            "CjsPhptpl\\": "src/"
+        }
+    }
+}
