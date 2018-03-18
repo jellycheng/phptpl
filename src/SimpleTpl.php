@@ -69,7 +69,7 @@ class SimpleTpl {
         $tplpathcache = $this->getCompileDir();
         $tplpathcache_name = "{$tplpathcache}{$tplnamearr[0]}.php";
         $tplpath_name = $this->getTplDir() . $tplname;
-        !is_dir($tplpathcache) && @mkdir($tplpathcache, 0777, true);
+        !is_dir(dirname($tplpathcache_name)) && @mkdir(dirname($tplpathcache_name), 0777, true);
         if (!is_file($tplpathcache_name) || @filemtime($tplpath_name) > @filemtime($tplpathcache_name)) {
             if (!is_file($tplpath_name)) {
                 exit('模板文件未找到: ' . $tplpath_name);
